@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page 1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/index.html" class="navbar-brand"
+              ><img src="./images/logo.png" alt="logo" class="img-fluid"
+            /></a>
+          </div>
+          <a href="" class="toggle-bar" onclick="toggleBar()" id="toggle-menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="navbar-tab">
+            <li class="nav-item active">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./product.html" class="nav-link">products</a>
+            </li>
+            <li class="nav-item">
+              <a href="./companies.html" class="nav-link">companies</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./blog.html" class="nav-link">blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">Login/Signup</a>
+            </li>
+          </ul>
+          <form action="" class="searchForm">
+            <input type="search" name="" id="" placeholder="Search" />
+            <button class="btn-search">
+              <span class="fa fa-search"></span>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="hero-text">
+              <h2>Welcome <br />To Captivist</h2>
+              <p>
+                We’re here to help you make more informed decisions about
+                consumer decisions.
+              </p>
+            </div>
+          </div>
+          <div class="col-2">
+            <img src="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/vendor/fontawesome/js/all.min.js"></script>
+
+    <script>
+      let menuToggle = document.getElementById("toggle-menu");
+      let x = document.getElementsByClassName("navbar navbar-tab");
+      let y = document.getElementsByClassName("searchForm");
+
+      function toggleBar() {
+        x.style.display = "block";
+        y.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
